@@ -118,7 +118,7 @@ Run 10, iteration: 2/100, moves: 0, cost: 250.0
 
 Best run was number 7
 
-
+![segmenting by question 5,9, 15-1?](./figure/seg_4.9.17.png)
 
 - centroid
      - '20 – 25' '中华人民共和国' '女' '未婚' '不足一百万元（6，000 元以下）' '学生' '有' '每周1-3次' '有'
