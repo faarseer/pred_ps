@@ -15,57 +15,110 @@ name = segment_3d_[factors].png
 name = survey_seg.csv
 
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 1, iteration: 1/100, moves: 4, cost: 240.0
+
 Run 1, iteration: 2/100, moves: 0, cost: 240.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 2, iteration: 1/100, moves: 9, cost: 242.0
+
 Run 2, iteration: 2/100, moves: 3, cost: 242.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 3, iteration: 1/100, moves: 5, cost: 240.0
+
 Run 3, iteration: 2/100, moves: 0, cost: 240.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 4, iteration: 1/100, moves: 1, cost: 268.0
+
 Run 4, iteration: 2/100, moves: 0, cost: 268.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 5, iteration: 1/100, moves: 9, cost: 263.0
+
 Run 5, iteration: 2/100, moves: 2, cost: 263.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 6, iteration: 1/100, moves: 12, cost: 237.0
+
 Run 6, iteration: 2/100, moves: 1, cost: 236.0
+
 Run 6, iteration: 3/100, moves: 0, cost: 236.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 7, iteration: 1/100, moves: 6, cost: 235.0
+
 Run 7, iteration: 2/100, moves: 0, cost: 235.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 8, iteration: 1/100, moves: 4, cost: 241.0
+
 Run 8, iteration: 2/100, moves: 0, cost: 241.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 9, iteration: 1/100, moves: 7, cost: 237.0
+
 Run 9, iteration: 2/100, moves: 1, cost: 237.0
+
 Init: initializing centroids
+
 Init: initializing clusters
+
 Starting iterations...
+
 Run 10, iteration: 1/100, moves: 8, cost: 250.0
+
 Run 10, iteration: 2/100, moves: 0, cost: 250.0
+
 Best run was number 7
+
+
 
 - centroid
      - '20 – 25' '中华人民共和国' '女' '未婚' '不足一百万元（6，000 元以下）' '学生' '有' '每周1-3次' '有'
