@@ -133,3 +133,5 @@ print(len(center_x))
 plt.scatter(center_x,center_y,s=50,marker='D',c='r')
 '''
 plt.show()
+
+predict.to_csv('survey_seg.csv')
