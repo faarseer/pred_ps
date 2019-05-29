@@ -136,3 +136,30 @@ plt.show()
 
 predict.to_csv('survey_seg.csv')
 print(km.cluster_centroids_)
+
+predict_ = pd.DataFrame(clusters, index = range(len(clusters)))
+predict_.columns = ['predict']
+
+a = []
+a.append([])
+a.append([])
+a.append([])
+a.append([])
+for i in range(len(predict_['predict'])) :
+	if predict_['predict'][i] == 0:
+		a[0].append(i)
+	if predict_['predict'][i] == 1:
+		a[1].append(i)
+	if predict_['predict'][i] == 2:
+		a[2].append(i)
+	if predict_['predict'][i] == 3:
+		a[3].append(i)
+
+a_ = np.array(a)
+predict__ = pd.DataFrame(a)
+
+print(predict__)
+
+#predict__.columns = ['seg_0', 'seg_1','seg_2','seg_3']
+
+predict__.to_csv('survey_seg_t.csv')
