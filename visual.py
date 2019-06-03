@@ -60,6 +60,17 @@ for i in range(10):
 	df = pd.DataFrame({'male': y_, 'female':y}, index = xlabel)
 	df.plot.barh(ax = axes[i // 2,i % 2], yticks = np.arange(16), title = 'CHN_population in {}'.format(i+2009))
 
+fig, axes = plt.subplots(5,2)
+fig.tight_layout()
+for i in range(10):
+	y = list(pop_CHN_f.iloc[:,i].T)
+	#y_ = list(pop_CHN_m.iloc[:,i].T) 
+	xlabel = attr
+	df = pd.DataFrame({'female':y}, index = xlabel)
+	df.plot.barh(ax = axes[i // 2,i % 2], yticks = np.arange(16), title = 'CHN_population in {}'.format(i+2009), color = 'blue')
+
+input()
+
 #plt.show()
 #plt.savefig('./CHN_pop.pdf')
 
@@ -118,15 +129,17 @@ for i in range(10):
 
 fig, axes = plt.subplots(5,2)
 fig.tight_layout()
-for i in range(10):
-	y = list(pop_KOR_f.iloc[:,i].T)
-	y_ = list(pop_KOR_m.iloc[:,i].T)
-	pop_CHN_f = np.array(pop_CHN_f.iloc[:,i])
-	CHN_np = (pop_CHN_f - np.mean(pop_CHN_f, axis=0)) / np.std(pop_CHN_f, axis=0)
-	pop_KOR_f = np.array(pop_KOR_f.iloc[:,i]) 
-	KOR_np = (pop_KOR_f - np.mean(pop_KOR_f, axis=0)) / np.std(pop_KOR_f, axis=0)
-	df = pd.DataFrame(np.array([CHN_np,KOR_np]).T, columns = ['CHN_f','KOR_f'])
-	df.boxplot(column = ['CHN_f','KOR_f'], ax = axes[i // 2,i % 2])
+
+
+# for i in range(10):
+# 	y = list(pop_KOR_f.iloc[:,i].T)
+# 	y_ = list(pop_KOR_m.iloc[:,i].T)
+# 	pop_CHN_f = np.array(pop_CHN_f.iloc[:,i])
+# 	CHN_np = (pop_CHN_f - np.mean(pop_CHN_f, axis=0)) / np.std(pop_CHN_f, axis=0)
+# 	pop_KOR_f = np.array(pop_KOR_f.iloc[:,i]) 
+# 	KOR_np = (pop_KOR_f - np.mean(pop_KOR_f, axis=0)) / np.std(pop_KOR_f, axis=0)
+# 	df = pd.DataFrame(np.array([CHN_np,KOR_np]).T, columns = ['CHN_f','KOR_f'])
+# 	df.boxplot(column = ['CHN_f','KOR_f'], ax = axes[i // 2,i % 2])
 
 '''
 fig, axes = plt.subplots(5,2)
